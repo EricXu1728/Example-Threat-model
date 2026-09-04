@@ -106,6 +106,7 @@
               "hasOpenThreats": false,
               "crossingFlows": [
                 "19c87f52-ea46-400f-b775-0e76304c1b7e",
+                "471bf16e-4d9c-4f69-9fc7-298c2a1d9ce3",
                 "3f69c563-205b-42be-a7b9-9435f78faedc"
               ],
               "containedElements": [
@@ -886,8 +887,8 @@
             },
             "vertices": [
               {
-                "x": 650,
-                "y": 310
+                "x": 660,
+                "y": 330
               },
               {
                 "x": 700,
@@ -1591,6 +1592,99 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              ""
+            ],
+            "id": "cf0790a0-93fe-47ed-a03d-660d80c027f5",
+            "source": {
+              "x": 330,
+              "y": 270
+            },
+            "target": {
+              "cell": "59c00ef4-b961-41d0-942a-5c56d7385c64",
+              "port": "e17df464-7d4e-4972-a27a-5730d7a1cbda"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "7bff3f65-7595-4e63-8799-4618abaf0ffc"
+              ]
+            },
+            "labels": [
+              ""
+            ],
+            "id": "471bf16e-4d9c-4f69-9fc7-298c2a1d9ce3",
+            "source": {
+              "cell": "bed8c839-a28a-4963-b454-a6de3c414a59"
+            },
+            "target": {
+              "cell": "3822e72f-313d-4c83-a090-c92d72a26bb1",
+              "port": "11c10d83-7357-4299-91e3-f4aca7f2780a"
+            }
+          },
+          {
             "position": {
               "x": 300,
               "y": -30
@@ -1616,20 +1710,20 @@
           },
           {
             "position": {
-              "x": 435,
-              "y": 238
+              "x": 415,
+              "y": 218
             },
             "size": {
-              "width": 60,
-              "height": 50
+              "width": 80,
+              "height": 70
             },
             "attrs": {
               "text": {
-                "text": ""
+                "text": "Routers/\nHops"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1721,17 +1815,52 @@
             "id": "59c00ef4-b961-41d0-942a-5c56d7385c64",
             "data": {
               "type": "tm.Process",
-              "name": "",
+              "name": "Routers/\nHops",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "f1209fc7-4fa4-40ae-92e1-46b09448a1b0",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Information disclosure",
+                  "description": "Attackers may read information being sent over network",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 8,
+                  "score": ""
+                },
+                {
+                  "id": "20d12212-8f47-4812-b6dd-a6d1eab69d1b",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Edit user information to post something they did not want",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 9,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -2611,7 +2740,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Spoofing of users' phones"
+                "text": "Spoofing of users' phones\nby faking location information"
               }
             },
             "visible": true,
@@ -2620,7 +2749,7 @@
             "id": "f1318e23-943a-414d-aab4-349ae908a10d",
             "data": {
               "type": "tm.Text",
-              "name": "Spoofing of users' phones",
+              "name": "Spoofing of users' phones\nby faking location information",
               "hasOpenThreats": false
             }
           },
@@ -2635,7 +2764,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Spoofing of users' \nTikTok accounts"
+                "text": "Spoofing of users' \nTikTok accounts by\nusing a stolen password"
               }
             },
             "visible": true,
@@ -2644,14 +2773,14 @@
             "id": "28958c37-fabf-4b52-abc0-c18a4e59f7e3",
             "data": {
               "type": "tm.Text",
-              "name": "Spoofing of users' \nTikTok accounts",
+              "name": "Spoofing of users' \nTikTok accounts by\nusing a stolen password",
               "hasOpenThreats": false
             }
           },
           {
             "position": {
-              "x": 537.4999999999995,
-              "y": 252
+              "x": 490.75,
+              "y": 300.00000000000176
             },
             "size": {
               "width": 112.5,
@@ -2659,7 +2788,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Info\nDisclosure"
+                "text": "Info Disclosure\nreading message content"
               }
             },
             "visible": true,
@@ -2668,7 +2797,7 @@
             "id": "1653cd08-328d-429b-873c-e912f9459fc7",
             "data": {
               "type": "tm.Text",
-              "name": "Info\nDisclosure",
+              "name": "Info Disclosure\nreading message content",
               "hasOpenThreats": false
             }
           },
@@ -2710,8 +2839,8 @@
             ],
             "id": "21920a74-3201-4c61-bedb-a28678a18b5d",
             "source": {
-              "x": 560,
-              "y": 280
+              "x": 540,
+              "y": 320
             },
             "target": {
               "cell": "59c00ef4-b961-41d0-942a-5c56d7385c64",
@@ -2720,7 +2849,7 @@
           },
           {
             "position": {
-              "x": 590,
+              "x": 622,
               "y": 318
             },
             "size": {
@@ -3115,7 +3244,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Spoofing as authorized engineer"
+                "text": "Spoofing as authorized engineer\nby using their credentials"
               }
             },
             "visible": true,
@@ -3124,7 +3253,55 @@
             "id": "56214282-5d4c-48ad-911d-c32359d7d0eb",
             "data": {
               "type": "tm.Text",
-              "name": "Spoofing as authorized engineer",
+              "name": "Spoofing as authorized engineer\nby using their credentials",
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 213,
+              "y": 238
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Tampering with\nmessage content"
+              }
+            },
+            "visible": true,
+            "shape": "td-text-block",
+            "id": "6a09870a-6162-4247-9c0d-7837dd6c53c5",
+            "zIndex": 30,
+            "data": {
+              "type": "tm.Text",
+              "name": "Tampering with\nmessage content",
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 850.25,
+              "y": 468
+            },
+            "size": {
+              "width": 110,
+              "height": 50
+            },
+            "attrs": {
+              "text": {
+                "text": "Repudiation caused by\ninsufficient logging"
+              }
+            },
+            "visible": true,
+            "shape": "td-text-block",
+            "id": "bed8c839-a28a-4963-b454-a6de3c414a59",
+            "zIndex": 31,
+            "data": {
+              "type": "tm.Text",
+              "name": "Repudiation caused by\ninsufficient logging",
               "hasOpenThreats": false
             }
           }
@@ -3133,6 +3310,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 7
+    "threatTop": 9
   }
 }
