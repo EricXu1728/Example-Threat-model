@@ -3383,6 +3383,30 @@
                 "y": 190
               }
             ]
+          },
+          {
+            "position": {
+              "x": 157.49999999999955,
+              "y": -90
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Eric Xu, Ashley Grice"
+              }
+            },
+            "visible": true,
+            "shape": "td-text-block",
+            "id": "2cadf2aa-4ccf-483a-8984-f4ac0428f81c",
+            "zIndex": 34,
+            "data": {
+              "type": "tm.Text",
+              "name": "Eric Xu, Ashley Grice",
+              "hasOpenThreats": false
+            }
           }
         ]
       }
