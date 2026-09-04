@@ -68,8 +68,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "e37d0df9-efa7-4d51-9c85-e64e3d8ad5f5",
             "zIndex": -1,
+            "id": "e37d0df9-efa7-4d51-9c85-e64e3d8ad5f5",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Internet",
@@ -96,8 +96,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "7bff3f65-7595-4e63-8799-4618abaf0ffc",
             "zIndex": -1,
+            "id": "7bff3f65-7595-4e63-8799-4618abaf0ffc",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Cloud",
@@ -132,8 +132,8 @@
                 "text": "Smart Phone\n\n\n\n\n"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -230,9 +230,27 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "7a26c513-34a1-4c3c-aba7-f741717669e9",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "Spoofing of user's phone",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 2,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 2,
+                "repudiation": 0
+              }
             }
           },
           {
@@ -248,14 +266,6 @@
             },
             "id": "547f2561-9e2d-4b7b-babb-3646635961da",
             "zIndex": 0,
-            "source": {
-              "cell": "59c00ef4-b961-41d0-942a-5c56d7385c64",
-              "port": "b1f6f0e7-57e9-4c69-b8c5-4b320094cca7"
-            },
-            "target": {
-              "x": 460,
-              "y": 370
-            },
             "data": {
               "type": "tm.Flow",
               "name": "Data Flow",
@@ -270,6 +280,14 @@
               "protocol": "",
               "threats": [],
               "trustBoundaryIds": []
+            },
+            "source": {
+              "cell": "59c00ef4-b961-41d0-942a-5c56d7385c64",
+              "port": "b1f6f0e7-57e9-4c69-b8c5-4b320094cca7"
+            },
+            "target": {
+              "x": 460,
+              "y": 370
             }
           },
           {
@@ -286,8 +304,8 @@
                 "text": "TikTok\n"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -417,8 +435,8 @@
                 "text": "Personal Computer\n\n\n\n"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -515,9 +533,27 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "a8f0b42f-feb3-4bff-b4d9-176691942f2d",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": " Spoofing of users' computers",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 3,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 0
+              }
             }
           },
           {
@@ -1463,7 +1499,7 @@
             },
             "attrs": {
               "text": {
-                "text": "#TIKTOK"
+                "text": "TIKTOK"
               }
             },
             "visible": true,
@@ -1472,7 +1508,7 @@
             "id": "701f30e7-d331-4a29-b36f-74b3c5e8d9dc",
             "data": {
               "type": "tm.Text",
-              "name": "#TIKTOK",
+              "name": "TIKTOK",
               "hasOpenThreats": false
             }
           },
@@ -1617,6 +1653,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 13,
             "ports": {
               "groups": {
                 "top": {
@@ -1700,7 +1737,6 @@
               ]
             },
             "id": "8b844a81-f4be-4454-bb0a-6f829dc8bf39",
-            "zIndex": 13,
             "data": {
               "type": "tm.Actor",
               "name": "Load Balancer",
@@ -1734,6 +1770,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 14,
             "ports": {
               "groups": {
                 "top": {
@@ -1817,7 +1854,6 @@
               ]
             },
             "id": "075025ff-513b-4ea3-a8f1-8ec58ba74bde",
-            "zIndex": 14,
             "data": {
               "type": "tm.Actor",
               "name": "W1",
@@ -1851,6 +1887,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 15,
             "ports": {
               "groups": {
                 "top": {
@@ -1944,8 +1981,7 @@
               "hasOpenThreats": false,
               "providesAuthentication": false,
               "threats": []
-            },
-            "zIndex": 15
+            }
           },
           {
             "position": {
@@ -1968,6 +2004,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 16,
             "ports": {
               "groups": {
                 "top": {
@@ -2061,8 +2098,7 @@
               "hasOpenThreats": false,
               "providesAuthentication": false,
               "threats": []
-            },
-            "zIndex": 16
+            }
           },
           {
             "position": {
@@ -2085,6 +2121,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 17,
             "ports": {
               "groups": {
                 "top": {
@@ -2178,8 +2215,7 @@
               "hasOpenThreats": false,
               "providesAuthentication": false,
               "threats": []
-            },
-            "zIndex": 17
+            }
           },
           {
             "position": {
@@ -2205,6 +2241,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 18,
             "ports": {
               "groups": {
                 "top": {
@@ -2288,7 +2325,6 @@
               ]
             },
             "id": "3822e72f-313d-4c83-a090-c92d72a26bb1",
-            "zIndex": 18,
             "data": {
               "type": "tm.Store",
               "name": "DB",
@@ -2307,7 +2343,7 @@
           },
           {
             "position": {
-              "x": 1006,
+              "x": 1056,
               "y": 338
             },
             "size": {
@@ -2326,6 +2362,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 19,
             "ports": {
               "groups": {
                 "top": {
@@ -2409,7 +2446,6 @@
               ]
             },
             "id": "e6265fac-314a-49ac-97c9-28fa8d364081",
-            "zIndex": 19,
             "data": {
               "type": "tm.Actor",
               "name": "Mike",
@@ -2424,8 +2460,8 @@
           },
           {
             "position": {
-              "x": 140,
-              "y": 20.00000000000003
+              "x": 130,
+              "y": 0
             },
             "size": {
               "width": 112.5,
@@ -2433,23 +2469,23 @@
             },
             "attrs": {
               "text": {
-                "text": "Spoof"
+                "text": "Spoofing of users' phones"
               }
             },
             "visible": true,
             "shape": "td-text-block",
-            "id": "f1318e23-943a-414d-aab4-349ae908a10d",
             "zIndex": 20,
+            "id": "f1318e23-943a-414d-aab4-349ae908a10d",
             "data": {
               "type": "tm.Text",
-              "name": "Spoof",
+              "name": "Spoofing of users' phones",
               "hasOpenThreats": false
             }
           },
           {
             "position": {
-              "x": 120,
-              "y": 100.00000000000222
+              "x": 100,
+              "y": 110
             },
             "size": {
               "width": 112.5,
@@ -2457,18 +2493,18 @@
             },
             "attrs": {
               "text": {
-                "text": "Spoof"
+                "text": "Spoofing of users' \nTikTok accounts"
               }
             },
             "visible": true,
             "shape": "td-text-block",
+            "zIndex": 21,
             "id": "28958c37-fabf-4b52-abc0-c18a4e59f7e3",
             "data": {
               "type": "tm.Text",
-              "name": "Spoof",
+              "name": "Spoofing of users' \nTikTok accounts",
               "hasOpenThreats": false
-            },
-            "zIndex": 21
+            }
           },
           {
             "position": {
@@ -2486,8 +2522,8 @@
             },
             "visible": true,
             "shape": "td-text-block",
-            "id": "1653cd08-328d-429b-873c-e912f9459fc7",
             "zIndex": 22,
+            "id": "1653cd08-328d-429b-873c-e912f9459fc7",
             "data": {
               "type": "tm.Text",
               "name": "Info\nDisclosure",
@@ -2561,6 +2597,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 24,
             "ports": {
               "groups": {
                 "top": {
@@ -2644,7 +2681,6 @@
               ]
             },
             "id": "a0567293-3886-4f21-aba2-8353a4d659bd",
-            "zIndex": 24,
             "data": {
               "type": "tm.Process",
               "name": "",
@@ -2676,8 +2712,8 @@
             },
             "visible": true,
             "shape": "td-text-block",
-            "id": "a3e35671-c8a4-41cb-b67e-e74a30ded4b0",
             "zIndex": 25,
+            "id": "a3e35671-c8a4-41cb-b67e-e74a30ded4b0",
             "data": {
               "type": "tm.Text",
               "name": "DOS\n\n",
@@ -2686,8 +2722,8 @@
           },
           {
             "position": {
-              "x": 1240,
-              "y": 288
+              "x": 1280,
+              "y": 360.00000000000176
             },
             "size": {
               "width": 112.5,
@@ -2695,16 +2731,16 @@
             },
             "attrs": {
               "text": {
-                "text": "Elevation of privilege\n(IDK IF THIS IS RIGHT I KINDA FORGOT AND IT WONT SHOW UP ON THE IMAGE)"
+                "text": "Information disclosure \n(employee to public)"
               }
             },
             "visible": true,
             "shape": "td-text-block",
-            "id": "9e9a947f-d4a5-43a4-9b38-b96d21aef55c",
             "zIndex": 26,
+            "id": "9e9a947f-d4a5-43a4-9b38-b96d21aef55c",
             "data": {
               "type": "tm.Text",
-              "name": "Elevation of privilege\n(IDK IF THIS IS RIGHT I KINDA FORGOT AND IT WONT SHOW UP ON THE IMAGE)",
+              "name": "Information disclosure \n(employee to public)",
               "hasOpenThreats": false
             }
           },
@@ -2748,12 +2784,192 @@
             ],
             "id": "3f69c563-205b-42be-a7b9-9435f78faedc",
             "source": {
-              "x": 1230,
-              "y": 310
+              "x": 1260,
+              "y": 390
             },
             "target": {
               "cell": "e6265fac-314a-49ac-97c9-28fa8d364081",
               "port": "4b973b24-4530-4de1-8631-36288373e67b"
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
             }
           }
         ]
@@ -2761,6 +2977,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 1
+    "threatTop": 3
   }
 }
