@@ -105,6 +105,7 @@
               "isTrustBoundary": true,
               "hasOpenThreats": false,
               "crossingFlows": [
+                "19c87f52-ea46-400f-b775-0e76304c1b7e",
                 "3f69c563-205b-42be-a7b9-9435f78faedc"
               ],
               "containedElements": [
@@ -1490,6 +1491,106 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "7bff3f65-7595-4e63-8799-4618abaf0ffc"
+              ]
+            },
+            "labels": [
+              ""
+            ],
+            "id": "19c87f52-ea46-400f-b775-0e76304c1b7e",
+            "source": {
+              "x": 1290,
+              "y": 320
+            },
+            "target": {
+              "cell": "1bb74611-2ebb-4607-8b40-f3a9dcafa8dc",
+              "port": "4b973b24-4530-4de1-8631-36288373e67b"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Elevation of\nprivilege",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Elevation of\nprivilege"
+            ],
+            "id": "dafbdb01-f92d-45c0-a968-d721201767c6",
+            "source": {
+              "cell": "1bb74611-2ebb-4607-8b40-f3a9dcafa8dc",
+              "port": "4b526ec2-71fa-44c5-8d79-56c205da374a"
+            },
+            "target": {
+              "cell": "3822e72f-313d-4c83-a090-c92d72a26bb1",
+              "port": "4ec32cb5-603a-4786-96fb-fbfa2a98f766"
+            },
+            "vertices": [
+              {
+                "x": 980,
+                "y": 310
+              }
+            ]
+          },
+          {
             "position": {
               "x": 300,
               "y": -30
@@ -2232,11 +2333,13 @@
                 "text": "DB"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -2333,13 +2436,33 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "b1e05eed-4571-4b7e-b63a-e5551edbe08f",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Users tampering database",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 6,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             }
           },
           {
@@ -2609,8 +2732,8 @@
                 "text": ""
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -2707,12 +2830,47 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "59fd17b2-d873-4a6c-a30d-08f9cb191ea4",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": " Denial of service impacting the load balancer",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 5,
+                  "score": ""
+                },
+                {
+                  "id": "262d5b83-0de4-4460-9866-32568527a7b7",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 7,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "tampering": 2,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -2726,7 +2884,7 @@
             },
             "attrs": {
               "text": {
-                "text": "DOS\n\n"
+                "text": "Denial of service\neffecting load balancer\n\n"
               }
             },
             "visible": true,
@@ -2735,7 +2893,7 @@
             "id": "a3e35671-c8a4-41cb-b67e-e74a30ded4b0",
             "data": {
               "type": "tm.Text",
-              "name": "DOS\n\n",
+              "name": "Denial of service\neffecting load balancer\n\n",
               "hasOpenThreats": false
             }
           },
@@ -2832,6 +2990,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 28,
             "ports": {
               "groups": {
                 "top": {
@@ -2943,16 +3102,15 @@
                 "spoofing": 1,
                 "repudiation": 0
               }
-            },
-            "zIndex": 28
+            }
           },
           {
             "position": {
-              "x": 1305,
-              "y": 278
+              "x": 1307.5,
+              "y": 287.99999999999983
             },
             "size": {
-              "width": 112.5,
+              "width": 190,
               "height": 60
             },
             "attrs": {
@@ -2962,8 +3120,8 @@
             },
             "visible": true,
             "shape": "td-text-block",
-            "id": "56214282-5d4c-48ad-911d-c32359d7d0eb",
             "zIndex": 29,
+            "id": "56214282-5d4c-48ad-911d-c32359d7d0eb",
             "data": {
               "type": "tm.Text",
               "name": "Spoofing as authorized engineer",
@@ -2975,6 +3133,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 4
+    "threatTop": 7
   }
 }
