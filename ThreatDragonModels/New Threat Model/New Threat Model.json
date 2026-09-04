@@ -3274,8 +3274,8 @@
             },
             "visible": true,
             "shape": "td-text-block",
-            "id": "6a09870a-6162-4247-9c0d-7837dd6c53c5",
             "zIndex": 30,
+            "id": "6a09870a-6162-4247-9c0d-7837dd6c53c5",
             "data": {
               "type": "tm.Text",
               "name": "Tampering with\nmessage content",
@@ -3298,8 +3298,8 @@
             },
             "visible": true,
             "shape": "td-text-block",
-            "id": "bed8c839-a28a-4963-b454-a6de3c414a59",
             "zIndex": 31,
+            "id": "bed8c839-a28a-4963-b454-a6de3c414a59",
             "data": {
               "type": "tm.Text",
               "name": "Repudiation caused by\ninsufficient logging",
@@ -3322,13 +3322,13 @@
             },
             "visible": true,
             "shape": "td-text-block",
+            "zIndex": 32,
             "id": "ec78ba10-85ed-453c-8e65-ec810559a938",
             "data": {
               "type": "tm.Text",
               "name": "Denial of service from sending\nmalicious oversized files",
               "hasOpenThreats": false
-            },
-            "zIndex": 32
+            }
           },
           {
             "shape": "flow",
@@ -3376,7 +3376,13 @@
             "target": {
               "cell": "8eb19833-bd81-4c1a-a7f5-eb64de782a5a",
               "port": "eb1f30d6-b219-49fe-8cd0-1da83ee824d5"
-            }
+            },
+            "vertices": [
+              {
+                "x": 340,
+                "y": 190
+              }
+            ]
           }
         ]
       }
